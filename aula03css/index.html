@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senac Filmes</title>
+     
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: rgb(29, 29, 29);
+        }
+        h1{
+            color:red;
+            font-size: 20pt;
+        }
+        p{
+            color: blue;
+        }
+
+              
+    </style>
+</head>
+     
+<body>
+    <h1>Cadastro de Filme</h1>
+    <form action="#">
+        <label for="titulo">Titulo do filme</label><br>
+        <input type="text"  id="titulo"><br>
+
+        <label for="sinopse" >sinopse</label><br>
+        <textarea nome="sinopse" id="sinopse" cols="30" rows="10"></textarea> 
+        <br>
+        
+        <label for="dataDeLacamento">data De Laçamento</label>
+        <input type="date" name="dataDeLacamento"  id="dataDeLacamento">
+
+        <label for="genero"></label>
+        <input type="text" list="gereros" id="genero">
+
+        <datalist id="generos">
+           <option value="Acao"></option>
+           <option value="Romance"></option>
+           <option value="Drama"></option>
+           <option value="Comedia"></option>
+           <option value="Terror"></option>
+        </datalist>
+
+        <br>
+
+        <label for="nota">Nota</label><br>
+        <input type="number" name="nota" id="nota" min="0" max="10">
+
+        <label for="ondeAssistir">Onde assistir</label>
+        <select name="ondeAssistir" id="ondeAssistir">
+          <option value="Netflix">Netflix</option>
+          <option value="Amazon">Amazon</option>
+          <option value="Disney">Disney</option>
+          <option value="HBO">HBO</option>
+        </select>
+
+        <br>
+
+        <input type="checkbox" name="assistido" id="assistido">
+        <label for="assistido">Assistido</label>
+
+        <br>
+        <input type="file" name="poster" id="poster" accept=".png">
+
+    </form>
+</body>
+</html>
